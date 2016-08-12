@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>添加房屋</title>
+	</head>
+	<body>
+		<form action="/add_building/" method="post">
+			{% csrf_token %}
+			<br>
+			房屋名称: <input type="text" name="name"><br>
+			地址: <input type="text" name="address"><br>
+			邮编: <input type="number" name="postcode"><br>
+			管理员: <input type="number" name="manager_id">
+		</form>
+		<p>{{ result }}</p>
+	</body>
+</html>

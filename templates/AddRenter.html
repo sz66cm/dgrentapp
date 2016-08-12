@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>添加租客</title>
+</head>
+<body>
+<body>
+		<form action="/add_renter/" method="post">
+			{% csrf_token %}
+			<br>
+			姓名: <input type="text" name="name"><br>
+			类型: <input type="text" name="address"><br>
+			邮编: <input type="number" name="postcode"><br>
+			管理员: <input type="number" name="manager_id">
+		</form>
+		<p>{{ result }}</p>
+	</body>
+</body>
+</html>

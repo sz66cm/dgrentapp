@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>添加用户类型</title>
+</head>
+<body>
+	<form action="/add_user_type/" method="post">
+			{% csrf_token %}
+			类型名字: <input type="text" name="type_name"><br>
+			描述: <input type="text" name="description"><br>
+			<input type="submit" value="提交">
+	</form>
+		<p>{{ result }}</p>
+</body>
+</html>
